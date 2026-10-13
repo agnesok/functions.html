@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+</head>
+<body>
+    
+    <h1>
+        Functions in JavaScript
+    </h1>
+
+    <button onclick="add (5,100)"> Addition  </button>
+    <button onclick="myfunction()"> Multiplication</button>
+    
+    <p>A function can access variable defined inside the function</p>
+    <p id="demo"></p>
+     <p id="demo1"></p>
+      <p id="demo2"></p>
+
+
+<div>
+    <h1 style="color:lightblue ;"> Starfield Declaration</h1>
+    <h3> Function Declaration</h3>
+</div>
+    <script>
+
+   var result= function(a,b){ return(a+b)}
+   document.write( result(5,8))
+
+
+   var b= 10;
+   function myfunction( ){
+     var a= 50;
+    document.getElementById("demo") .innerHTML=b*a;
+   }
+   document.getElementById("demo1") .innerHTML=a;
+   document.getElementById("demo2") .innerHTML=b;
+
+
+        function add(x,y ){
+            if( y === undefined)
+            y= 2;
+        
+            document.write(x+y)
+        }
+    </script>
+
+
+
+</body>
+</html>
